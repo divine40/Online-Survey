@@ -41,7 +41,7 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
     // Date validation
     const date = document.getElementById('date').value;
     if (!/^\d{2}-\d{2}-\d{4}$/.test(date)) {
-        document.getElementById('dateError').innerText = "Date must be in DD-MM-YYYY format.";
+        document.getElementById('dateError').innerText = "Date must be in DD-MM-YYYY format (only numbers).";
         isValid = false;
     } else {
         const parts = date.split('-');
